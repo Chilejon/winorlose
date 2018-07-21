@@ -1,10 +1,8 @@
 body {
     padding: 50px;
-<<<<<<< HEAD
+
     background-color: #F8F8F8;
-=======
-    background-color: #FFFFFF;
->>>>>>> 36a3cac0d69f80a7296f272bf419b78543c84d27
+
     font-family: sans-serif;
   }
   #container {
@@ -15,12 +13,10 @@ body {
   .todoListMain .header input {
     padding: 10px;
     font-size: 16px;
-<<<<<<< HEAD
-    border: 2px solid #FFF;
-=======
+
+
     border: 2px solid #CCCCCc;
-    width: 165px;
->>>>>>> 36a3cac0d69f80a7296f272bf419b78543c84d27
+
   }
 
   .todoListMain .header select {
@@ -36,7 +32,7 @@ body {
     font-size: 16px;
     margin: 10px;
     margin-right: 0px;
-    background-color: rgb(255, 0, 0);
+    background-color: #003399;
     color: #FFF;
     border: 2px solid #0066FF;
   }

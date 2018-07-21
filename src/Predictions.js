@@ -28,61 +28,7 @@ class Predictions extends React.Component {
 
   }
 
-  // handleChange = (event) => {
-  //   var debt = this._inputElement.value / event.target.value
-
-  //   debt = Math.round(debt*100)/100 
-
-  //   this.setState({ monthlyCost: debt, numberOfMonths: event.target.value })
-
- 
-
-  //   var lastDateNew = new Date()
-
-  //   //testing jan feb march dates
-
-  //   lastDateNew = new Date("2018", "1", "1")
-
- 
-
-  //   if ((lastDateNew.getMonth() + 1) > 3)
-
-  //    {
-
-  //      //2 = March due to zero indexing
-
-  //     var c = new Date(lastDateNew.getFullYear() + 1, "2", "31")
-
-  //     lastDateNew = c
-
-  //    }
-
-  //    else
-
-  //    {
-
-  //     var c = new Date(lastDateNew.getFullYear(), "2", "31")
-
-  //     lastDateNew = c
-
-  //    }
-
- 
-
-  //    var months;
-  //    months = (new Date().getFullYear() - lastDateNew.getFullYear()) * 12;
-  //    months -= lastDateNew.getMonth() + 1;
-  //    months += new Date().getMonth();
-     
-
-  //    this.setState({ monthsLeft: months})
-  //   this.setState({ lastDate: lastDateNew })
-
-  // };
-
-//   monthDiff(d1, d2) {
-    
-// };
+  
 
 addItem(e) {
   this.setState({
@@ -195,7 +141,7 @@ addItem(e) {
 
 </section>
 
-<button type="submit">Apply</button>
+<button type="submit">Submit...</button>
           </form>
 
         </div>
