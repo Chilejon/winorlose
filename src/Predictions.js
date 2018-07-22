@@ -17,10 +17,13 @@ class Predictions extends React.Component {
       firstDivLose: "",
       secondDivWin: "",
       secondDivLose: "",
+      scotchWin: "",
+      scotchLose:"",
       premTeams: ['Arsenal', 'Bournemouth', 'Brighton & Hove Albion', 'Burnley', 'Cardiff City', 'Chelsea', 'Crystal Palace', 'Everton', 'Fulham', 'Huddersfield Town', 'Leicester City', 'Liverpool', 'Man City', 'Man Utd', 'Newcastle Utd', 'Southampton', 'Tottenham Hotspur', 'Watford', 'West Ham Utd', 'Wolverhampton Wanderers'],
       champTeams: ['Aston Villa', 'Birmingham City', 'Blackburn Rovers', 'Bolton Wanderers', 'Brentford', 'Bristol City','Derby County','Hull City','Ipswich Town','Leeds Utd','Middlesbrough','Millwall','Norwich City','Nottingham Forest','Preston North End','QPR','Reading','Rotherham Utd','Sheffield Utd','Sheffield Wednesday','Stoke City','Swansea City','West Bromwich Albion','Wigan Athletic'],
       firstTeams: ['Accrington Stanley', 'AFC Wimbledon', 'Barnsley', 'Blackpool', 'Bradford City', 'Bristol Rovers','Burton Albion','Charlton Athletic','Coventry City','Doncaster Rovers','Fleetwood Town','Gillingham','Luton Town','Oxford Utd','Peterborough Utd','Plymouth Argyle','Portsmouth','Rochdale','Scunthorpe Utd','Shrewsbury Town','Southend Utd','Sunderland','Walsall','Wycombe Wanderers'],
-      secondTeams: ['Bury', 'Cambridge Utd', 'Carlisle Utd', 'Cheltenham Town', 'Colchester Utd', 'Crawley Town','Crewe Alexandra','Exeter City','Forest Green Rovers','Grimsby Town','Lincoln City','Macclesfield Town','Mansfield Town','Milton Keynes Dons','Morecambe','Newport County','Northampton Town','Notts County','Oldham Athletic','Port Vale','Stevenage','Swindon Town','Tranmere Rovers','Yeovil Town']
+      secondTeams: ['Bury', 'Cambridge Utd', 'Carlisle Utd', 'Cheltenham Town', 'Colchester Utd', 'Crawley Town','Crewe Alexandra','Exeter City','Forest Green Rovers','Grimsby Town','Lincoln City','Macclesfield Town','Mansfield Town','Milton Keynes Dons','Morecambe','Newport County','Northampton Town','Notts County','Oldham Athletic','Port Vale','Stevenage','Swindon Town','Tranmere Rovers','Yeovil Town'],
+      scotchTeams: ['Aberdeen','Celtic', 'Dundee', 'Hamilton', 'Hearts','Hibernian', 'Kilmarnock', 'Livingston', 'Motherwell', 'Rangers','St Johnstone','St Mirren']
     };
 
 
@@ -44,7 +47,9 @@ addItem(e) {
      firstDivWin: this.firstDivWinner.value,
      firstDivLose: this.firstDivLoser.value,
      secondDivWin: this.secondDivWinner.value,
-     secondDivLose: this.secondDivLoser.value
+     secondDivLose: this.secondDivLoser.value,
+     scotchWin: this.scotchWinner.value,
+     scotchLose: this.scotchLoser.value
   });
  e.preventDefault();
 }
@@ -52,9 +57,11 @@ addItem(e) {
   render() {
 
     return (
-
+      
       <div className="todoListMain">
+<a href="#rules">Go to Rules</a>
         <div className="header">
+       
         <form onSubmit={this.addItem}>
 
             <input ref={(a) => this._name = a}
@@ -65,6 +72,7 @@ addItem(e) {
               placeholder="Email" required id="txtEmail" size="40">
             </input>
             <hr/>
+            <section className="middleText">
             <section>
             <strong>Premiership winner</strong>
             <select id="premWinnerx" ref = {(input)=> this.premWinner = input} required>
@@ -81,6 +89,7 @@ addItem(e) {
       <option value={team}>{team}</option>
     )};
   </select>
+  </section>
   <hr/>
   <section>
               <strong>Championship winner</strong>
@@ -136,6 +145,24 @@ addItem(e) {
     )};
   </select>
   </section>
+  <hr/>
+  <section>
+              <strong>Scottish winner</strong>
+              <select id="scotchWinner" ref = {(input)=> this.scotchWinner = input} required>
+            <option value=''>Select one</option>
+    {this.state.scotchTeams.map(team =>
+      <option value={team}>{team}</option>
+    )};
+  </select>
+  &nbsp;
+              <strong>Scottish loser</strong>
+              <select id="scotchLoser" ref = {(input)=> this.scotchLoser = input} required>
+  <option value=''>Select one</option>
+    {this.state.scotchTeams.map(team =>
+      <option value={team}>{team}</option>
+    )};
+  </select>
+  </section>
 
 
 
@@ -176,8 +203,53 @@ addItem(e) {
         {this.state.secondDivWin}
         <h3>Second Division Loser</h3>
         {this.state.secondDivLose}
+        <h3>Scottish Winner</h3>
+        {this.state.scotchWin}
+        <h3>Scottish Loser</h3>
+        {this.state.scotchLose}
 
         </section>
+
+<aside>
+<h2 class="redText">IMPORTANT</h2>  
+<h3>
+  Copy and paste the next line into an email to jon.chiles( at )Stockport.gov.uk
+</h3>
+<p class="redText">
+          #{this.state.name}* #{this.state.email}* #{this.state.premWin}* #{this.state.premLose}* #{this.state.champWin}* #{this.state.champLose}* #{this.state.firstDivWin}* #{this.state.firstDivLose}* #{this.state.secondDivWin}* #{this.state.secondDivLose}* #{this.state.scotchWin}* #{this.state.scotchLose}*
+</p>
+</aside>
+
+<aside>
+<h2 id="rules">Rules/Instructions</h2>
+
+<p>
+  Enter your full name, email address.
+  Now choose who you think will win and lose each of the 5 main divisions in the UK.
+  Click Submit...  this will generate a snippit of text above in red. Cut and paste only this line in an email to me.
+  On submission of the email you then owe the competition £5. 
+</p>
+<p>
+  After the leagues have finished in 2019 the scores will be counted as follows.
+  If you correctly get the winner from each division you get a single point each.
+  Same goes for the loser. Get that spot on it's a point awarded. 
+  If you predicted Chelsea to win and they finish 4th then you get 4 points. 
+  If you predicted West Ham to lose and they come 10th. You get 11 points.
+  </p>
+  <p>
+  The aim of the game is to get the least points. 10 being the lowest.    
+        Should the same points be awarded to more than one person, you'll share the pot.
+  All entries must be emailed to me by 4th of Aug.
+  There will be a link to the full predictions sent out.     
+  
+
+</p>
+
+</aside>
+
+
+
+
           </div>
 
       </div>

@@ -114,3 +114,14 @@ body {
   .longBox{
     width:400px;
   }
+
+  .redText{
+    color:red;
+  }
+
+  .middleText{
+    width:800px;
+    
+    text-align: center;
+
+  }
