@@ -59,6 +59,7 @@ addItem(e) {
     return (
       
       <div className="todoListMain">
+      <h1>Win or Lose - Your predictions</h1>
 <a href="#rules">Go to Rules</a>
         <div className="header">
        
@@ -177,7 +178,7 @@ addItem(e) {
 
 
           <section id="SendThis" style={{border:1}}>
-          <h3>Send this</h3>
+          <h2>Your details</h2>
           Name: {this.state.name} <br/>
           Email: {this.state.email} <br/>
           Date :
