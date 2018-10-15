@@ -125,3 +125,99 @@ body {
     text-align: center;
 
   }
+
+  table {
+    width: 10%;
+  }
+  
+  tr {
+  
+  }
+  
+  td {
+    
+    position: relative;
+    border:1px solid; 
+  
+  }
+  
+  td:after {
+    content: '';
+    display: block;
+    margin-top: 00;
+    margin-bottom: 00;
+    height:-15px;
+    width:20px;
+  }
+  
+  td.b
+  {
+      background-color:blue;
+  }
+  td.b input[type="text"] {
+    background-color : blue; 
+  }
+  
+  td.g
+  {
+    background-color:green;
+  }
+  td.g input[type="text"]
+  {
+      background-color:green;
+  }
+  
+  td.w
+  {
+      background-color:white;
+  }
+  
+  td.r
+  {
+      background-color:red;
+  }
+  td.r input[type="text"]
+  {
+      background-color:red;
+  }
+  
+  td.o
+  {
+      background-color:orange;
+  }
+  td.o input[type="text"]
+  {
+      background-color:orange;
+  }
+  
+  td.y
+  {
+      background-color:yellow;
+  }
+  td.y input[type="text"]
+  {
+      background-color:yellow;
+  }
+  
+  input
+  {
+    width:6px;
+    height:3px;
+    border:0px;
+    
+    padding:-10px;
+  }
+  
+  input[type="text"]
+  {
+      font-size:.6em;
+  }
+  
+  .status2 {
+    border-right:black 3px solid;  
+  }
+  
+  .status3 {
+    border-bottom:black 3px solid;
+  }
+  

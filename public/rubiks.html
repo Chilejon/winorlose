@@ -1,0 +1,511 @@
+<html>
+<head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="../src/ToDoList.css">
+
+        <script>
+                $(document).ready(function(){
+                    $("button").click(function(){
+                        $("p").slideToggle();
+                    });
+                });
+                </script>
+
+                
+
+
+<script>
+    $(document).ready(function(){
+
+$('td.status input').bind('change keyup', function(){
+    var td=$(this).closest('td');
+    
+    if ($(this).val()=='b') td.addClass('b');       
+    else td.removeClass('b');
+    
+    if ($(this).val()=='o') td.addClass('o');       
+    else td.removeClass('o');
+    
+            if ($(this).val()=='y') td.addClass('y');       
+    else td.removeClass('y');
+    
+            if ($(this).val()=='r') td.addClass('r');       
+    else td.removeClass('r');
+    
+            if ($(this).val()=='w') td.addClass('w');       
+    else td.removeClass('w');
+    
+            if ($(this).val()=='g') td.addClass('g');       
+    else td.removeClass('g');
+         
+}).trigger('change');
+});
+</script>
+</head>
+
+
+<body>
+
+        <p>This is a paragraph.</p>
+                
+        <button>Toggle between slide up and slide down for a p element</button>
+        
+
+
+    <table>
+        <tr id="1">
+            <td class="status"><input type="text" value=""></td>
+            <td class="status"><input type="text" value=""></td>
+            <td class="status2"><input type="text" value=""></td>
+            
+            <td class="status"><input type="text" value=""></td>
+            <td class="status"><input type="text" value=""></td>
+            <td class="status2"><input type="text" value=""></td>
+            
+            <td class="status"><input type="text" value=""></td>
+            <td class="status"><input type="text" value=""></td>
+            <td class="status2"><input type="text" value=""></td>
+            
+            <td class="status"><input type="text" value=""></td>
+            <td class="status"><input type="text" value=""></td>
+            <td class="status2"><input type="text" value=""></td>
+            
+            <td class="status"><input type="text" value=""></td>
+            <td class="status"><input type="text" value=""></td>
+            <td class="status2"><input type="text" value=""></td>
+            
+            <td class="status"><input type="text" value=""></td>
+            <td class="status"><input type="text" value=""></td>
+            <td class="status2"><input type="text" value=""></td>
+        </tr>
+        <tr  id="2">
+            <td class="status"><input type="text" value=""></td>
+            <td class="status"><input type="text" value=""></td>
+            <td class="status2"><input type="text" value=""></td>
+            
+            <td class="status"><input type="text" value=""></td>
+            <td class="status"><input type="text" value=""></td>
+            <td class="status2"><input type="text" value=""></td>
+            
+            <td class="status"><input type="text" value=""></td>
+            <td class="status"><input type="text" value=""></td>
+            <td class="status2"><input type="text" value=""></td>
+            
+            <td class="status"><input type="text" value=""></td>
+            <td class="status"><input type="text" value=""></td>
+            <td class="status2"><input type="text" value=""></td>
+            
+            <td class="status"><input type="text" value=""></td>
+            <td class="status"><input type="text" value=""></td>
+            <td class="status2"><input type="text" value=""></td>
+            
+            <td class="status"><input type="text" value=""></td>
+            <td class="status"><input type="text" value=""></td>
+            <td class="status2"><input type="text" value=""></td>
+        </tr>
+        <tr  id="3">
+            <td class="status3"><input type="text" value=""></td>
+            <td class="status3"><input type="text" value=""></td>
+            <td class="status2"><input type="text" value=""></td>
+            
+            <td class="status3"><input type="text" value=""></td>
+            <td class="status3"><input type="text" value=""></td>
+            <td class="status2"><input type="text" value=""></td>
+            
+            <td class="status3"><input type="text" value=""></td>
+            <td class="status3"><input type="text" value=""></td>
+            <td class="status2"><input type="text" value=""></td>
+            
+            <td class="status3"><input type="text" value=""></td>
+            <td class="status3"><input type="text" value=""></td>
+            <td class="status2"><input type="text" value=""></td>
+            
+            <td class="status3"><input type="text" value=""></td>
+            <td class="status3"><input type="text" value=""></td>
+            <td class="status2"><input type="text" value=""></td>
+            
+            <td class="status3"><input type="text" value=""></td>
+            <td class="status3"><input type="text" value=""></td>
+            <td class="status2"><input type="text" value=""></td>
+        </tr>
+        <tr  id="4">
+            <td class="status"><input type="text" value=""></td>
+            <td class="status"><input type="text" value=""></td>
+            <td class="status2"><input type="text" value=""></td>
+            
+            <td class="status"><input type="text" value=""></td>
+            <td class="status"><input type="text" value=""></td>
+            <td class="status2"><input type="text" value=""></td>
+            
+            <td class="status"><input type="text" value=""></td>
+            <td class="status"><input type="text" value=""></td>
+            <td class="status2"><input type="text" value=""></td>
+            
+            <td class="status"><input type="text" value=""></td>
+            <td class="status"><input type="text" value=""></td>
+            <td class="status2"><input type="text" value=""></td>
+            
+            <td class="status"><input type="text" value=""></td>
+            <td class="status"><input type="text" value=""></td>
+            <td class="status2"><input type="text" value=""></td>
+            
+            <td class="status"><input type="text" value=""></td>
+            <td class="status"><input type="text" value=""></td>
+            <td class="status2"><input type="text" value=""></td>
+        </tr>
+        <tr  id="5">
+            <td class="status"><input type="text" value=""></td>
+            <td class="status"><input type="text" value=""></td>
+            <td class="status2"><input type="text" value=""></td>
+            
+            <td class="status"><input type="text" value=""></td>
+            <td class="status"><input type="text" value=""></td>
+            <td class="status2"><input type="text" value=""></td>
+            
+            <td class="status"><input type="text" value=""></td>
+            <td class="status"><input type="text" value=""></td>
+            <td class="status2"><input type="text" value=""></td>
+            
+            <td class="status"><input type="text" value=""></td>
+            <td class="status"><input type="text" value=""></td>
+            <td class="status2"><input type="text" value=""></td>
+            
+            <td class="status"><input type="text" value=""></td>
+            <td class="status"><input type="text" value=""></td>
+            <td class="status2"><input type="text" value=""></td>
+            
+            <td class="status"><input type="text" value=""></td>
+            <td class="status"><input type="text" value=""></td>
+            <td class="status2"><input type="text" value=""></td>
+        </tr>
+        <tr  id="6">
+               <td class="status3"><input type="text" value=""></td>
+            <td class="status3"><input type="text" value=""></td>
+            <td class="status2"><input type="text" value=""></td>
+            
+            <td class="status3"><input type="text" value=""></td>
+            <td class="status3"><input type="text" value=""></td>
+            <td class="status2"><input type="text" value=""></td>
+            
+            <td class="status3"><input type="text" value=""></td>
+            <td class="status3"><input type="text" value=""></td>
+            <td class="status2"><input type="text" value=""></td>
+            
+            <td class="status3"><input type="text" value=""></td>
+            <td class="status3"><input type="text" value=""></td>
+            <td class="status2"><input type="text" value=""></td>
+            
+            <td class="status3"><input type="text" value=""></td>
+            <td class="status3"><input type="text" value=""></td>
+            <td class="status2"><input type="text" value=""></td>
+            
+            <td class="status3"><input type="text" value=""></td>
+            <td class="status3"><input type="text" value=""></td>
+            <td class="status2"><input type="text" value=""></td>
+        </tr>
+        <tr  id="7">
+            <td class="status"><input type="text" value=""></td>
+            <td class="status"><input type="text" value=""></td>
+            <td class="status2"><input type="text" value=""></td>
+            
+            <td class="status"><input type="text" value=""></td>
+            <td class="status"><input type="text" value=""></td>
+            <td class="status2"><input type="text" value=""></td>
+            
+            <td class="status"><input type="text" value=""></td>
+            <td class="status"><input type="text" value=""></td>
+            <td class="status2"><input type="text" value=""></td>
+            
+            <td class="status"><input type="text" value=""></td>
+            <td class="status"><input type="text" value=""></td>
+            <td class="status2"><input type="text" value=""></td>
+            
+            <td class="status"><input type="text" value=""></td>
+            <td class="status"><input type="text" value=""></td>
+            <td class="status2"><input type="text" value=""></td>
+            
+            <td class="status"><input type="text" value=""></td>
+            <td class="status"><input type="text" value=""></td>
+            <td class="status2"><input type="text" value=""></td>
+        </tr>
+        <tr  id="8">
+            <td class="status"><input type="text" value=""></td>
+            <td class="status"><input type="text" value=""></td>
+            <td class="status2"><input type="text" value=""></td>
+            
+            <td class="status"><input type="text" value=""></td>
+            <td class="status"><input type="text" value=""></td>
+            <td class="status2"><input type="text" value=""></td>
+            
+            <td class="status"><input type="text" value=""></td>
+            <td class="status"><input type="text" value=""></td>
+            <td class="status2"><input type="text" value=""></td>
+            
+            <td class="status"><input type="text" value=""></td>
+            <td class="status"><input type="text" value=""></td>
+            <td class="status2"><input type="text" value=""></td>
+            
+            <td class="status"><input type="text" value=""></td>
+            <td class="status"><input type="text" value=""></td>
+            <td class="status2"><input type="text" value=""></td>
+            
+            <td class="status"><input type="text" value=""></td>
+            <td class="status"><input type="text" value=""></td>
+            <td class="status2"><input type="text" value=""></td>
+        </tr>
+        <tr  id="9">
+               <td class="status3"><input type="text" value=""></td>
+            <td class="status3"><input type="text" value=""></td>
+            <td class="status2"><input type="text" value=""></td>
+            
+            <td class="status3"><input type="text" value=""></td>
+            <td class="status3"><input type="text" value=""></td>
+            <td class="status2"><input type="text" value=""></td>
+            
+            <td class="status3"><input type="text" value=""></td>
+            <td class="status3"><input type="text" value=""></td>
+            <td class="status2"><input type="text" value=""></td>
+            
+            <td class="status3"><input type="text" value=""></td>
+            <td class="status3"><input type="text" value=""></td>
+            <td class="status2"><input type="text" value=""></td>
+            
+            <td class="status3"><input type="text" value=""></td>
+            <td class="status3"><input type="text" value=""></td>
+            <td class="status2"><input type="text" value=""></td>
+            
+            <td class="status3"><input type="text" value=""></td>
+            <td class="status3"><input type="text" value=""></td>
+            <td class="status2"><input type="text" value=""></td>
+        </tr>
+        <tr id="10">
+            <td class="status"><input type="text" value=""></td>
+            <td class="status"><input type="text" value=""></td>
+            <td class="status2"><input type="text" value=""></td>
+            
+            <td class="status"><input type="text" value=""></td>
+            <td class="status"><input type="text" value=""></td>
+            <td class="status2"><input type="text" value=""></td>
+            
+            <td class="status"><input type="text" value=""></td>
+            <td class="status"><input type="text" value=""></td>
+            <td class="status2"><input type="text" value=""></td>
+            
+            <td class="status"><input type="text" value=""></td>
+            <td class="status"><input type="text" value=""></td>
+            <td class="status2"><input type="text" value=""></td>
+            
+            <td class="status"><input type="text" value=""></td>
+            <td class="status"><input type="text" value=""></td>
+            <td class="status2"><input type="text" value=""></td>
+            
+            <td class="status"><input type="text" value=""></td>
+            <td class="status"><input type="text" value=""></td>
+            <td class="status2"><input type="text" value=""></td>
+        </tr>
+        <tr  id="11">
+            <td class="status"><input type="text" value=""></td>
+            <td class="status"><input type="text" value=""></td>
+            <td class="status2"><input type="text" value=""></td>
+            
+            <td class="status"><input type="text" value=""></td>
+            <td class="status"><input type="text" value=""></td>
+            <td class="status2"><input type="text" value=""></td>
+            
+            <td class="status"><input type="text" value=""></td>
+            <td class="status"><input type="text" value=""></td>
+            <td class="status2"><input type="text" value=""></td>
+            
+            <td class="status"><input type="text" value=""></td>
+            <td class="status"><input type="text" value=""></td>
+            <td class="status2"><input type="text" value=""></td>
+            
+            <td class="status"><input type="text" value=""></td>
+            <td class="status"><input type="text" value=""></td>
+            <td class="status2"><input type="text" value=""></td>
+            
+            <td class="status"><input type="text" value=""></td>
+            <td class="status"><input type="text" value=""></td>
+            <td class="status2"><input type="text" value=""></td>
+        </tr>
+        <tr  id="12">
+               <td class="status3"><input type="text" value=""></td>
+            <td class="status3"><input type="text" value=""></td>
+            <td class="status2"><input type="text" value=""></td>
+            
+            <td class="status3"><input type="text" value=""></td>
+            <td class="status3"><input type="text" value=""></td>
+            <td class="status2"><input type="text" value=""></td>
+            
+            <td class="status3"><input type="text" value=""></td>
+            <td class="status3"><input type="text" value=""></td>
+            <td class="status2"><input type="text" value=""></td>
+            
+            <td class="status3"><input type="text" value=""></td>
+            <td class="status3"><input type="text" value=""></td>
+            <td class="status2"><input type="text" value=""></td>
+            
+            <td class="status3"><input type="text" value=""></td>
+            <td class="status3"><input type="text" value=""></td>
+            <td class="status2"><input type="text" value=""></td>
+            
+            <td class="status3"><input type="text" value=""></td>
+            <td class="status3"><input type="text" value=""></td>
+            <td class="status2"><input type="text" value=""></td>
+        </tr>
+        <tr  id="13">
+            <td class="status"><input type="text" value=""></td>
+            <td class="status"><input type="text" value=""></td>
+            <td class="status2"><input type="text" value=""></td>
+            
+            <td class="status"><input type="text" value=""></td>
+            <td class="status"><input type="text" value=""></td>
+            <td class="status2"><input type="text" value=""></td>
+            
+            <td class="status"><input type="text" value=""></td>
+            <td class="status"><input type="text" value=""></td>
+            <td class="status2"><input type="text" value=""></td>
+            
+            <td class="status"><input type="text" value=""></td>
+            <td class="status"><input type="text" value=""></td>
+            <td class="status2"><input type="text" value=""></td>
+            
+            <td class="status"><input type="text" value=""></td>
+            <td class="status"><input type="text" value=""></td>
+            <td class="status2"><input type="text" value=""></td>
+            
+            <td class="status"><input type="text" value=""></td>
+            <td class="status"><input type="text" value=""></td>
+            <td class="status2"><input type="text" value=""></td>
+        </tr>
+        <tr  id="14">
+            <td class="status"><input type="text" value=""></td>
+            <td class="status"><input type="text" value=""></td>
+            <td class="status2"><input type="text" value=""></td>
+            
+            <td class="status"><input type="text" value=""></td>
+            <td class="status"><input type="text" value=""></td>
+            <td class="status2"><input type="text" value=""></td>
+            
+            <td class="status"><input type="text" value=""></td>
+            <td class="status"><input type="text" value=""></td>
+            <td class="status2"><input type="text" value=""></td>
+            
+            <td class="status"><input type="text" value=""></td>
+            <td class="status"><input type="text" value=""></td>
+            <td class="status2"><input type="text" value=""></td>
+            
+            <td class="status"><input type="text" value=""></td>
+            <td class="status"><input type="text" value=""></td>
+            <td class="status2"><input type="text" value=""></td>
+            
+            <td class="status"><input type="text" value=""></td>
+            <td class="status"><input type="text" value=""></td>
+            <td class="status2"><input type="text" value=""></td>
+        </tr>
+        <tr  id="15">
+                <td class="status3"><input type="text" value=""></td>
+            <td class="status3"><input type="text" value=""></td>
+            <td class="status2"><input type="text" value=""></td>
+            
+            <td class="status3"><input type="text" value=""></td>
+            <td class="status3"><input type="text" value=""></td>
+            <td class="status2"><input type="text" value=""></td>
+            
+            <td class="status3"><input type="text" value=""></td>
+            <td class="status3"><input type="text" value=""></td>
+            <td class="status2"><input type="text" value=""></td>
+            
+            <td class="status3"><input type="text" value=""></td>
+            <td class="status3"><input type="text" value=""></td>
+            <td class="status2"><input type="text" value=""></td>
+            
+            <td class="status3"><input type="text" value=""></td>
+            <td class="status3"><input type="text" value=""></td>
+            <td class="status2"><input type="text" value=""></td>
+            
+            <td class="status3"><input type="text" value=""></td>
+            <td class="status3"><input type="text" value=""></td>
+            <td class="status2"><input type="text" value=""></td>
+        </tr>
+        <tr  id="16">
+            <td class="status"><input type="text" value=""></td>
+            <td class="status"><input type="text" value=""></td>
+            <td class="status2"><input type="text" value=""></td>
+            
+            <td class="status"><input type="text" value=""></td>
+            <td class="status"><input type="text" value=""></td>
+            <td class="status2"><input type="text" value=""></td>
+            
+            <td class="status"><input type="text" value=""></td>
+            <td class="status"><input type="text" value=""></td>
+            <td class="status2"><input type="text" value=""></td>
+            
+            <td class="status"><input type="text" value=""></td>
+            <td class="status"><input type="text" value=""></td>
+            <td class="status2"><input type="text" value=""></td>
+            
+            <td class="status"><input type="text" value=""></td>
+            <td class="status"><input type="text" value=""></td>
+            <td class="status2"><input type="text" value=""></td>
+            
+            <td class="status"><input type="text" value=""></td>
+            <td class="status"><input type="text" value=""></td>
+            <td class="status2"><input type="text" value=""></td>
+        </tr>
+        <tr  id="17">
+            <td class="status"><input type="text" value=""></td>
+            <td class="status"><input type="text" value=""></td>
+            <td class="status2"><input type="text" value=""></td>
+            
+            <td class="status"><input type="text" value=""></td>
+            <td class="status"><input type="text" value=""></td>
+            <td class="status2"><input type="text" value=""></td>
+            
+            <td class="status"><input type="text" value=""></td>
+            <td class="status"><input type="text" value=""></td>
+            <td class="status2"><input type="text" value=""></td>
+            
+            <td class="status"><input type="text" value=""></td>
+            <td class="status"><input type="text" value=""></td>
+            <td class="status2"><input type="text" value=""></td>
+            
+            <td class="status"><input type="text" value=""></td>
+            <td class="status"><input type="text" value=""></td>
+            <td class="status2"><input type="text" value=""></td>
+            
+            <td class="status"><input type="text" value=""></td>
+            <td class="status"><input type="text" value=""></td>
+            <td class="status2"><input type="text" value=""></td>
+        </tr>
+        <tr  id="18">
+               <td class="status3"><input type="text" value=""></td>
+            <td class="status3"><input type="text" value=""></td>
+            <td class="status2"><input type="text" value=""></td>
+            
+            <td class="status3"><input type="text" value=""></td>
+            <td class="status3"><input type="text" value=""></td>
+            <td class="status2"><input type="text" value=""></td>
+            
+            <td class="status3"><input type="text" value=""></td>
+            <td class="status3"><input type="text" value=""></td>
+            <td class="status2"><input type="text" value=""></td>
+            
+            <td class="status3"><input type="text" value=""></td>
+            <td class="status3"><input type="text" value=""></td>
+            <td class="status2"><input type="text" value=""></td>
+            
+            <td class="status3"><input type="text" value=""></td>
+            <td class="status3"><input type="text" value=""></td>
+            <td class="status2"><input type="text" value=""></td>
+            
+            <td class="status3"><input type="text" value=""></td>
+            <td class="status3"><input type="text" value=""></td>
+            <td class="status2"><input type="text" value=""></td>
+        </tr>
+        </table>
+         
+
+
+</body>
+</html>
