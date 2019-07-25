@@ -19,11 +19,42 @@ class Predictions extends React.Component {
       secondDivLose: "",
       scotchWin: "",
       scotchLose:"",
-      premTeams: ['Arsenal', 'Bournemouth', 'Brighton & Hove Albion', 'Burnley', 'Cardiff City', 'Chelsea', 'Crystal Palace', 'Everton', 'Fulham', 'Huddersfield Town', 'Leicester City', 'Liverpool', 'Man City', 'Man Utd', 'Newcastle Utd', 'Southampton', 'Tottenham Hotspur', 'Watford', 'West Ham Utd', 'Wolverhampton Wanderers'],
-      champTeams: ['Aston Villa', 'Birmingham City', 'Blackburn Rovers', 'Bolton Wanderers', 'Brentford', 'Bristol City','Derby County','Hull City','Ipswich Town','Leeds Utd','Middlesbrough','Millwall','Norwich City','Nottingham Forest','Preston North End','QPR','Reading','Rotherham Utd','Sheffield Utd','Sheffield Wednesday','Stoke City','Swansea City','West Bromwich Albion','Wigan Athletic'],
-      firstTeams: ['Accrington Stanley', 'AFC Wimbledon', 'Barnsley', 'Blackpool', 'Bradford City', 'Bristol Rovers','Burton Albion','Charlton Athletic','Coventry City','Doncaster Rovers','Fleetwood Town','Gillingham','Luton Town','Oxford Utd','Peterborough Utd','Plymouth Argyle','Portsmouth','Rochdale','Scunthorpe Utd','Shrewsbury Town','Southend Utd','Sunderland','Walsall','Wycombe Wanderers'],
-      secondTeams: ['Bury', 'Cambridge Utd', 'Carlisle Utd', 'Cheltenham Town', 'Colchester Utd', 'Crawley Town','Crewe Alexandra','Exeter City','Forest Green Rovers','Grimsby Town','Lincoln City','Macclesfield Town','Mansfield Town','Milton Keynes Dons','Morecambe','Newport County','Northampton Town','Notts County','Oldham Athletic','Port Vale','Stevenage','Swindon Town','Tranmere Rovers','Yeovil Town'],
-      scotchTeams: ['Aberdeen','Celtic', 'Dundee', 'Hamilton', 'Hearts','Hibernian', 'Kilmarnock', 'Livingston', 'Motherwell', 'Rangers','St Johnstone','St Mirren']
+      premTeams: ['Aston Villa',
+       'Arsenal', 'Bournemouth', 'Brighton & Hove Albion',
+        'Burnley', 'Chelsea', 'Crystal Palace', 
+        'Everton', 'Fulham',  'Leicester City',
+         'Liverpool', 'Man City', 'Man Utd',
+          'Newcastle Utd', 'Norwich City', 'Sheff Utd',
+           'Southampton', 'Tottenham Hotspur', 'Watford',
+            'West Ham Utd', 'Wolverhampton Wanderers'],
+      champTeams: [ 'Birmingham City', 'Blackburn Rovers', 'Barnsley', 
+      'Brentford', 'Bristol City', 'Cardiff City',
+      'Huddersfield Town','Derby County','Hull City',
+      'Leeds Utd', 'Luton Town','Middlesbrough',
+      'Millwall','Norwich City','Nottingham Forest',
+      'Preston North End','QPR','Reading',
+      'Sheffield Wednesday','Stoke City','Swansea City',
+      'West Bromwich Albion','Wigan Athletic'],
+      firstTeams: ['Accrington Stanley', 'Bolton', 'Bury',
+       'AFC Wimbledon', 'Blackpool',  'Bristol Rovers',
+       'Burton Albion', 'Gillingham', 'Fleetwood Town',
+        'Ipswich Town','Doncaster Rovers','Oxford Utd',
+        'MK Dons', 'Peterborough Utd', 'Rotherham Utd',
+        'Portsmouth','Rochdale', 'Coventry',
+        'Shrewsbury Town','Southend Utd','Sunderland',
+        'Tranmere Rovers','Wycombe Wanderers'],
+      secondTeams: ['Bradford','Cambridge Utd', 'Carlisle Utd',
+       'Cheltenham Town', 'Colchester Utd', 'Crawley Town',
+       'Crewe Alexandra','Exeter City','Forest Green Rovers',
+       'Grimsby Town','Leyton Orient','Macclesfield Town',
+       'Mansfield Town','Morecambe', 'Scunthorpe',
+       'Newport County','Northampton Town','Plymouth Argyle',
+       'Oldham Athletic','Port Vale','Stevenage', 'Salford City',
+       'Swindon Town', 'Walsall'],
+      scotchTeams: ['Aberdeen','Celtic', 'Hamilton',
+       'Hearts','Hibernian', 'Kilmarnock',
+        'Livingston', 'Motherwell', 'Rangers',
+        'Ross County','St Johnstone','St Mirren']
     };
 
 
@@ -231,7 +262,7 @@ addItem(e) {
   On submission of the email you then owe the competition £5. 
 </p>
 <p>
-  After the leagues have finished in 2019 the scores will be counted as follows.
+  After the leagues have finished in 2020 the scores will be counted as follows.
   If you correctly get the winner from each division you get a single point each.
   Same goes for the loser. Get that spot on it's a point awarded. 
   If you predicted Chelsea to win and they finish 4th then you get 4 points. 
