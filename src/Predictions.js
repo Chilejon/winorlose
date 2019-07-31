@@ -22,7 +22,7 @@ class Predictions extends React.Component {
       premTeams: ['Aston Villa',
        'Arsenal', 'Bournemouth', 'Brighton & Hove Albion',
         'Burnley', 'Chelsea', 'Crystal Palace', 
-        'Everton', 'Fulham',  'Leicester City',
+        'Everton', 'Leicester City',
          'Liverpool', 'Man City', 'Man Utd',
           'Newcastle Utd', 'Norwich City', 'Sheff Utd',
            'Southampton', 'Tottenham Hotspur', 'Watford',
@@ -86,6 +86,7 @@ addItem(e) {
 }
 
   render() {
+
 
     return (
       
