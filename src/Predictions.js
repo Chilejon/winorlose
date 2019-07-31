@@ -31,7 +31,7 @@ class Predictions extends React.Component {
       'Brentford', 'Bristol City', 'Cardiff City',
       'Huddersfield Town','Derby County','Hull City',
       'Leeds Utd', 'Luton Town','Middlesbrough',
-      'Millwall','Norwich City','Nottingham Forest',
+      'Millwall','Fulham','Nottingham Forest',
       'Preston North End','QPR','Reading',
       'Sheffield Wednesday','Stoke City','Swansea City',
       'West Bromwich Albion','Wigan Athletic'],
@@ -98,11 +98,11 @@ addItem(e) {
         <form onSubmit={this.addItem}>
 
             <input ref={(a) => this._name = a}
-              placeholder="Name" required id="txtName">
+              placeholder="Name" required id="txtName" style={{width:"200px"}}>
             </input>
 &nbsp;
             <input ref={(a) => this._email = a}
-              placeholder="Email" required id="txtEmail" size="40">
+              placeholder="Email" required id="txtEmail" size="40" style={{width:"400px"}}>
             </input>
             <hr/>
             <section className="middleText">
@@ -197,9 +197,42 @@ addItem(e) {
   </select>
   </section>
 
+  &nbsp;
+              <strong>FA Cup winner</strong>
+              <select id="fACupWinner" ref = {(input)=> this.fAWinner = input} required>
+  <option value=''>Select one</option>
+    {this.state.premTeams.map(team =>
+      <option value={team}>{team}</option>
+    )}
+    {this.state.champTeams.map(team =>
+      <option value={team}>{team}</option>
+    )}
+    {this.state.firstTeams.map(team =>
+      <option value={team}>{team}</option>
+    )}
+    {this.state.secondTeams.map(team =>
+      <option value={team}>{team}</option>
+    )}
+  </select>
 
-
-</section>
+    &nbsp;
+              <strong>League Cup winner</strong>
+              <select id="leagueCupWinner" ref = {(input)=> this.leagueWinner = input} required>
+  <option value=''>Select one</option>
+    {this.state.premTeams.map(team =>
+      <option value={team}>{team}</option>
+    )}
+    {this.state.champTeams.map(team =>
+      <option value={team}>{team}</option>
+    )}
+    {this.state.firstTeams.map(team =>
+      <option value={team}>{team}</option>
+    )}
+    {this.state.secondTeams.map(team =>
+      <option value={team}>{team}</option>
+    )}
+  </select>
+  </section>
 
 <button type="submit">Submit...</button>
           </form>
