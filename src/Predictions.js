@@ -19,6 +19,8 @@ class Predictions extends React.Component {
       secondDivLose: "",
       scotchWin: "",
       scotchLose:"",
+      fAWinner:"",
+      leagueWinner:"",
       premTeams: ['Aston Villa',
        'Arsenal', 'Bournemouth', 'Brighton & Hove Albion',
         'Burnley', 'Chelsea', 'Crystal Palace', 
@@ -80,7 +82,9 @@ addItem(e) {
      secondDivWin: this.secondDivWinner.value,
      secondDivLose: this.secondDivLoser.value,
      scotchWin: this.scotchWinner.value,
-     scotchLose: this.scotchLoser.value
+     scotchLose: this.scotchLoser.value,
+     fAWinner: this.fAWinner.value,
+     leagueWinner: this.leagueWinner.value
   });
  e.preventDefault();
 }
@@ -196,7 +200,7 @@ addItem(e) {
     )};
   </select>
   </section>
-
+  <hr/>
   &nbsp;
               <strong>FA Cup winner</strong>
               <select id="fACupWinner" ref = {(input)=> this.fAWinner = input} required>
@@ -217,7 +221,7 @@ addItem(e) {
 
     &nbsp;
               <strong>League Cup winner</strong>
-              <select id="leagueCupWinner" ref = {(input)=> this.leagueWinner = input} required>
+              <select id="leagueWinner" ref = {(input)=> this.leagueWinner = input} required>
   <option value=''>Select one</option>
     {this.state.premTeams.map(team =>
       <option value={team}>{team}</option>
@@ -273,6 +277,10 @@ addItem(e) {
         {this.state.scotchWin}
         <h3>Scottish Loser</h3>
         {this.state.scotchLose}
+        <h3>FA Cup Winner</h3>
+        {this.state.fAWinner}
+        <h3>League Cup Winner</h3>
+        {this.state.leagueWinner}
 
         </section>
 
@@ -282,7 +290,7 @@ addItem(e) {
   Copy and paste the next line into an email to jon.chiles( at )Stockport.gov.uk
 </h3>
 <p class="redText">
-          #{this.state.name}* #{this.state.email}* #{this.state.premWin}* #{this.state.premLose}* #{this.state.champWin}* #{this.state.champLose}* #{this.state.firstDivWin}* #{this.state.firstDivLose}* #{this.state.secondDivWin}* #{this.state.secondDivLose}* #{this.state.scotchWin}* #{this.state.scotchLose}*
+          #{this.state.name}* #{this.state.email}* #{this.state.premWin}* #{this.state.premLose}* #{this.state.champWin}* #{this.state.champLose}* #{this.state.firstDivWin}* #{this.state.firstDivLose}* #{this.state.secondDivWin}* #{this.state.secondDivLose}* #{this.state.scotchWin}* #{this.state.scotchLose}* #{this.state.fAWinner}* #{this.state.leagueWinner}*
 </p>
 </aside>
 
@@ -291,26 +299,33 @@ addItem(e) {
 
 <p>
   Enter your full name, email address.
-  Now choose who you think will win and lose each of the 5 main divisions in the UK.
+  Now choose who you think will win and lose each of the 5 main divisions in the UK, and the 2 domestic cups.
   Click Submit...  this will generate a snippit of text above in red. Cut and paste only this line in an email to me.
   On submission of the email you then owe the competition £5. 
 </p>
 <p>
-  After the leagues have finished in 2020 the scores will be counted as follows.
+  Prize fund is dependant upon how many take part. Top prize last year was £75.
+</p>
+<p>
+  After the leagues have finished in 2020 the scores will be counted as follows:
   If you correctly get the winner from each division you get a single point each.
   Same goes for the loser. Get that spot on it's a point awarded. 
   If you predicted Chelsea to win and they finish 4th then you get 4 points. 
   If you predicted West Ham to lose and they come 10th. You get 11 points.
   </p>
   <p>
+    On Dec 31st i'll do a "mid season" table work out and whoever is top at this point will win a prize.
+  </p>
+  <p>
   The aim of the game is to get the least points. 10 being the lowest.    
         Should the same points be awarded to more than one person, you'll share the pot.
-  All entries must be emailed to me by 4th of Aug.
+  All entries must be emailed to me by Fri 16th of Aug. (I'm aware some divisions will have started.)
   There will be a link to the full predictions sent out.     
-  
-
 </p>
-
+  <p>
+    For the Cup predictions, if you choose Man City with 10 other people you'll share the prize (to be confirmed) 10 ways.
+    If you choose Yeovil Town (on your own) and they win, you claim the entire prize pot.
+    </p>
 </aside>
 
 
